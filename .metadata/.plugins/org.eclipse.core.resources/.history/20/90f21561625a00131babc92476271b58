@@ -1,0 +1,3 @@
+module bloby
+    implicit none
+end module bloby
