@@ -95,3 +95,27 @@ Binding(CTRL+SHIFT+G,
 
 !ENTRY org.eclipse.cdt.core 1 0 2013-12-01 09:21:58.525
 !MESSAGE Indexed 'blob' (0 sources, 0 headers) in 0,00 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00 %)
+
+!ENTRY org.eclipse.egit.core 4 0 2013-12-01 09:31:30.596
+!MESSAGE An exception occurred during push on URI https://github.com/IASIG2013-PFO/testeclipsegithub.git: https://github.com/IASIG2013-PFO/testeclipsegithub.git: git-receive-pack not permitted
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/IASIG2013-PFO/testeclipsegithub.git: git-receive-pack not permitted
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:486)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:398)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:154)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1170)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:190)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:206)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.egit.core 4 0 2013-12-01 09:32:00.086
+!MESSAGE An exception occurred during push on URI https://github.com/IASIG2013-PFO/testeclipsegithub.git: https://github.com/IASIG2013-PFO/testeclipsegithub.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/IASIG2013-PFO/testeclipsegithub.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:479)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:398)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:154)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1170)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:190)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:206)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
